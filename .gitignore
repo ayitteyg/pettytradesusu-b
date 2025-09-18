@@ -1,0 +1,31 @@
+# Ignore secrets folder and files
+secrets/
+secrets/*.json
+data_excel/
+data_json/
+management/*
+
+# Ignore environment variables
+.env
+*.env
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+menv/
+.menv/
+_venv/
+_venv
+
+
+# Ignore database files (if using SQLite)
+db.sqlite3
+*.sqlite3
+
+# Ignore logs and temp files
+logs/
+*.log
+*.bak
+*.swp
