@@ -95,6 +95,7 @@ def signin(request):
         'username': user.username,
         'userId': user.id,
         'email': user.email,
+        'is_officer': user.is_officer,
         'church': user.church.name if hasattr(user, 'church') and user.church else None,
     })
 
