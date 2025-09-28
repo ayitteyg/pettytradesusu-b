@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CustomUser, Loan, Transaction
+from .models import CustomUser, Loan, LoanRepayment, Transaction
 
 # Register your models here.
 @admin.register(CustomUser)
@@ -7,6 +7,12 @@ class CustomUserAdmin(admin.ModelAdmin):
     pass
 
 
+
+@admin.register(LoanRepayment)
+class LoanRepaymentAdmin(admin.ModelAdmin):
+    list_display =(
+        "loan", "member", "amount_paid", "payment_date"
+    )
 
 @admin.register(Loan)
 class LoanAdmin(admin.ModelAdmin):
